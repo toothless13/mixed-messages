@@ -11,3 +11,27 @@ const sheDidArr = ['looked at her phone', 'went horse riding', 'went swimming', 
 const consequenceArr = ['the sun came out', 'the pasta boiled over', 'the car crashed into the wall', 'the food burnt to the pan', 'the author finished the book', 'they both won the lottery'];
 const worldSaidArr = ['phew', 'I love it', 'what a time to be alive', "that's awful", "we're so happy", "that's amazing"];
 
+function randomElement(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+
+const adj1 = randomElement(adj1Arr);
+const name1 = randomElement(name1Arr);
+const adj2 = randomElement(adj2Arr);
+const name2 = randomElement(name2Arr);
+const placeMet = randomElement(placeMetArr);
+const activity = randomElement(activityArr);
+const heWore = randomElement(heWoreArr);
+const sheWore = randomElement(sheWoreArr);
+const heDid = randomElement(heDidArr);
+const sheDid = randomElement(sheDidArr);
+const consequence = randomElement(consequenceArr);
+const worldSaid = randomElement(worldSaidArr);
+
+console.log(`${adj1} ${name1} met ${adj2} ${name2} at ${placeMet} to ${activity}.`);
+console.log(`He wore ${heWore}.`);
+console.log(`She wore ${sheWore}.`);
+console.log(`He ${heDid}.`);
+console.log(`She ${sheDid}.`);
+console.log(`And the consequence was, ${consequence}.`);
+console.log(`And the world said "${worldSaid}".`);
